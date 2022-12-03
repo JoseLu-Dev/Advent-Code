@@ -14,9 +14,9 @@ export async function getRockPaperScissorsPointsTopSecretStrategy(inputFile: str
 const possibilities = {
 
     //LOSS
-    'B X':1, //piedra
-    'C X':2, //papel
-    'A X':3, //tijera
+    'B X':1,
+    'C X':2,
+    'A X':3,
     
     //DRAW
     'A Y':4,
@@ -24,16 +24,7 @@ const possibilities = {
     'C Y':6,
     
     //WIN
-    'C Z':7, //piedra
-    'A Z':8, //papel
-    'B Z':9, //tijera
-
+    'C Z':7,
+    'A Z':8,
+    'B Z':9,
 }
-
-// X loss 
-// Y draw 
-// Z win
-
-//A X //piedra
-//B Y //papel
-//C Z //tijera
