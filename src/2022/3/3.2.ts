@@ -30,7 +30,7 @@ function getCommonItem(ruckSacks: string[]): string[]{
     let commonItems = getCommonItemsBetweenTwoSacks(firstSack, secondSack)
 
     for (const sack of ruckSacks) {
-        commonItems = getCommonItemsBetweenTwoSacks(sack, commonItems.join())
+        commonItems = getCommonItemsBetweenTwoSacks(sack, commonItems.join(''))
     }
 
     return commonItems
