@@ -7,6 +7,7 @@ import { getRockPaperScissorsPointsTopSecretStrategy } from "./2/2.2"
 import { getRucksacksPrioritySum } from "./3/3.1"
 import { getRucksacksGroupsPrioritySum } from "./3/3.2"
 import { getNumberOfPairsFullyContainsOther } from "./4/4.1"
+import { getNumberOfPairsContainsOther } from "./4/4.2"
 
 adventCode2022()
 
@@ -25,5 +26,6 @@ async function adventCode2022(){
 
     console.log('--- Day 4: Camp Cleanup ---')
     console.log('4.1: ' + await getNumberOfPairsFullyContainsOther(path.join('src', '2022', '4', 'input.txt')))
+    console.log('4.2: ' + await getNumberOfPairsContainsOther(path.join('src', '2022', '4', 'input.txt')))
 
 }
