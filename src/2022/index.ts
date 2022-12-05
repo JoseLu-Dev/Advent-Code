@@ -9,6 +9,7 @@ import { getRucksacksGroupsPrioritySum } from "./3/3.2"
 import { getNumberOfPairsFullyContainsOther } from "./4/4.1"
 import { getNumberOfPairsContainsOther } from "./4/4.2"
 import { rearrangeStacksAndShowTops } from "./5/5.1"
+import { rearrangeStacksAndShowTopsCrateMover90001 } from "./5/5.2"
 
 adventCode2022()
 
@@ -31,4 +32,5 @@ async function adventCode2022(){
 
     console.log('--- Day 5: Supply Stacks ---')
     console.log('5.1: ' + await rearrangeStacksAndShowTops(path.join('src', '2022', '5', 'input.txt')))
+    console.log('6.1: ' + await rearrangeStacksAndShowTopsCrateMover90001(path.join('src', '2022', '5', 'input.txt')))
 }
