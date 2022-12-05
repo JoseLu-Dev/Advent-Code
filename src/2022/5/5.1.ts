@@ -1,8 +1,8 @@
 import { readFileLines } from "../../common/readFileLines";
 
-let stacks: string[][] = []
 
 export async function rearrangeStacksAndShowTops(inputFile: string) {
+    let stacks: string[][] = []
 
     let stacksRead = false
 
@@ -15,23 +15,23 @@ export async function rearrangeStacksAndShowTops(inputFile: string) {
             stacksRead = true
 
         if (!stacksRead)
-            return addLineToStacksList(line)
+            return addLineToStacksList(line, stacks)
 
         if (line[1] === '1') {
             return
         }
 
         if (stacksRead) {
-            rearrangeStacks(line)
+            rearrangeStacks(line, stacks)
         }
 
     })
 
-    return getTopOfStacks()
+    return getTopOfStacks(stacks)
 }
 
 
-function addLineToStacksList(line: string) {
+function addLineToStacksList(line: string, stacks: string[][]) {
     let index = 0
 
     if (stacks.length === 0) {
@@ -50,11 +50,11 @@ function addLineToStacksList(line: string) {
     }
 }
 
-function getTopOfStacks() {
+function getTopOfStacks(stacks: string[][]) {
     return stacks.map(s => s.pop()).join('')
 }
 
-function rearrangeStacks(instruction: string) {
+function rearrangeStacks(instruction: string, stacks: string[][]) {
     const instructionsParsed = parseInstruction(instruction)
 
     for (let i = 0; i < instructionsParsed.numberToMove; i++) {
