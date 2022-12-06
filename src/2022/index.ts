@@ -10,6 +10,7 @@ import { getNumberOfPairsFullyContainsOther } from "./4/4.1"
 import { getNumberOfPairsContainsOther } from "./4/4.2"
 import { rearrangeStacksAndShowTops } from "./5/5.1"
 import { rearrangeStacksAndShowTopsCrateMover90001 } from "./5/5.2"
+import { findMarkerPosition } from "./6/6.1"
 
 adventCode2022()
 
@@ -32,5 +33,8 @@ async function adventCode2022(){
 
     console.log('--- Day 5: Supply Stacks ---')
     console.log('5.1: ' + await rearrangeStacksAndShowTops(path.join('src', '2022', '5', 'input.txt')))
-    console.log('6.1: ' + await rearrangeStacksAndShowTopsCrateMover90001(path.join('src', '2022', '5', 'input.txt')))
+    console.log('5.1: ' + await rearrangeStacksAndShowTopsCrateMover90001(path.join('src', '2022', '5', 'input.txt')))
+
+    console.log('--- Day 6: Tuning Trouble ---')
+    console.log('6.1: ' + await findMarkerPosition(path.join('src', '2022', '6', 'input.txt')))
 }
