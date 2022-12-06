@@ -11,6 +11,7 @@ import { getNumberOfPairsContainsOther } from "./4/4.2"
 import { rearrangeStacksAndShowTops } from "./5/5.1"
 import { rearrangeStacksAndShowTopsCrateMover90001 } from "./5/5.2"
 import { findMarkerPosition } from "./6/6.1"
+import { findMarkerPositionSecondPart } from "./6/6.2"
 
 adventCode2022()
 
@@ -37,4 +38,5 @@ async function adventCode2022(){
 
     console.log('--- Day 6: Tuning Trouble ---')
     console.log('6.1: ' + await findMarkerPosition(path.join('src', '2022', '6', 'input.txt')))
+    console.log('6.2: ' + await findMarkerPositionSecondPart(path.join('src', '2022', '6', 'input.txt')))
 }
