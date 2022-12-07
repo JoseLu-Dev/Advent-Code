@@ -2,7 +2,7 @@ import * as path from "path"
 
 import { getSpaceTaken } from "./7.1"
 
-describe('should return sum of priorities of repeated items', () => {
+describe('7.1', () => {
 
     it('example input', async () => {
         expect(await getSpaceTaken(path.join('src', '2022', '7', 'input_example.txt'))).toBe(95437)

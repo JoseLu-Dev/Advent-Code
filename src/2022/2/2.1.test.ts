@@ -2,7 +2,7 @@ import * as path from "path"
 
 import { getRockPaperScissorsPoints } from "./2.1"
 
-describe('should return total points for the given strategy', () => {
+describe('2.1', () => {
 
     it('example input', async () => {
         expect(await getRockPaperScissorsPoints(path.join('src', '2022', '2', 'input_example.txt'))).toBe(15)
