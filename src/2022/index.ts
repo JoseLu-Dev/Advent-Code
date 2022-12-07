@@ -13,6 +13,7 @@ import { rearrangeStacksAndShowTopsCrateMover90001 } from "./5/5.2"
 import { findMarkerPosition } from "./6/6.1"
 import { findMarkerPositionSecondPart } from "./6/6.2"
 import { getSpaceTaken } from "./7/7.1"
+import { getSpaceOfSmallestFolderToDelete } from "./7/7.2"
 
 adventCode2022()
 
@@ -42,6 +43,7 @@ async function adventCode2022(){
     console.log('6.2: ' + await findMarkerPositionSecondPart(path.join('src', '2022', '6', 'input.txt')))
 
     console.log('--- Day 7: No Space Left On Device ---')
-    console.log('7.2: ' + await getSpaceTaken(path.join('src', '2022', '7', 'input.txt')))
+    console.log('7.1: ' + await getSpaceTaken(path.join('src', '2022', '7', 'input.txt')))
+    console.log('7.2: ' + await getSpaceOfSmallestFolderToDelete(path.join('src', '2022', '7', 'input.txt'), 70000000, 30000000))
 
 }
