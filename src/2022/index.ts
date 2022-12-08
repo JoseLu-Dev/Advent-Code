@@ -15,6 +15,7 @@ import { findMarkerPositionSecondPart } from "./6/6.2"
 import { getSpaceTaken } from "./7/7.1"
 import { getSpaceOfSmallestFolderToDelete } from "./7/7.2"
 import { getVisibleTrees } from "./8/8.1"
+import { getHighestScenicScore } from "./8/8.2"
 
 adventCode2022()
 
@@ -49,4 +50,5 @@ async function adventCode2022(){
 
     console.log('--- Day 8: Treetop Tree House ---')
     console.log('8.1 ' + await getVisibleTrees(path.join('src', '2022', '8', 'input.txt')))
+    console.log('8.2 ' + await getHighestScenicScore(path.join('src', '2022', '8', 'input.txt')))
 }
