@@ -64,14 +64,3 @@ export function isVisibleInYAxis(treeMatrix: number[][], x: number, y: number): 
 
     return visibleUp || visibleDown
 }
-
-export function isAtEdge(treeMatrix: number[][], x: number, y: number): boolean {
-
-    if (treeMatrix.length - 1 <= y || y <= 0)
-        return true
-
-    if (treeMatrix[y].length - 1 <= x || x <= 0)
-        return true
-
-    return false
-}

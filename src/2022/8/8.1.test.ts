@@ -1,6 +1,6 @@
 import * as path from "path"
 
-import { getVisibleTrees, isAtEdge, isVisibleInXAxis, isVisibleInYAxis } from './8.1';
+import { getVisibleTrees, isVisibleInXAxis, isVisibleInYAxis } from './8.1';
 
 describe('8.1', () => {
 
@@ -21,35 +21,6 @@ const treeMatrix = [
     [3, 3, 5, 4, 9],
     [3, 5, 3, 9, 0]
 ]
-describe('isAtEdge', () => {
-    it('0 0', () => {
-        expect(isAtEdge(treeMatrix, 0, 0)).toBe(true)
-    })
-
-    it('4 0', () => {
-        expect(isAtEdge(treeMatrix, 4, 0)).toBe(true)
-    })
-
-    it('0 4', () => {
-        expect(isAtEdge(treeMatrix, 0, 4)).toBe(true)
-    })
-
-    it('4 4', () => {
-        expect(isAtEdge(treeMatrix, 4, 4)).toBe(true)
-    })
-
-    it('3 3', () => {
-        expect(isAtEdge(treeMatrix, 3, 3)).toBe(false)
-    })
-
-    it('2 1', () => {
-        expect(isAtEdge(treeMatrix, 2, 1)).toBe(false)
-    })
-
-    it('3 1', () => {
-        expect(isAtEdge(treeMatrix, 3, 1)).toBe(false)
-    })
-})
 
 describe('isVisibleInXAxis', () => {
 
