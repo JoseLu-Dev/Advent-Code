@@ -14,6 +14,7 @@ import { findMarkerPosition } from "./6/6.1"
 import { findMarkerPositionSecondPart } from "./6/6.2"
 import { getSpaceTaken } from "./7/7.1"
 import { getSpaceOfSmallestFolderToDelete } from "./7/7.2"
+import { getVisibleTrees } from "./8/8.1"
 
 adventCode2022()
 
@@ -46,4 +47,6 @@ async function adventCode2022(){
     console.log('7.1: ' + await getSpaceTaken(path.join('src', '2022', '7', 'input.txt')))
     console.log('7.2: ' + await getSpaceOfSmallestFolderToDelete(path.join('src', '2022', '7', 'input.txt'), 70000000, 30000000))
 
+    console.log('--- Day 8: Treetop Tree House ---')
+    console.log('8.1 ' + await getVisibleTrees(path.join('src', '2022', '8', 'input.txt')))
 }
